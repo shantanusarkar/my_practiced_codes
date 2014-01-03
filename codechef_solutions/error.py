@@ -1,0 +1,13 @@
+# link to question: http://www.codechef.com/JAN14/problems/ERROR
+# author: Shantanu Sarkar
+
+#!/usr/bin/env python
+t = int(raw_input())
+for x in range(0, t):
+    a = raw_input()
+    c = a.__contains__('010')
+    d = a.__contains__('101')
+    if c == True or d == True:
+        print 'Good'
+    else:
+        print 'Bad'
